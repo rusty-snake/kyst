@@ -1,0 +1,14 @@
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.  This file is offered as-is,
+# without any warranty.
+
+blacklist ${MUSIC}
+blacklist ${VIDEOS}
+
+whitelist ${HOME}/.config/youtube-dl
+whitelist ${DOWNLOADS}
+
+# https://github.com/netblue30/firejail/issues/1803#issuecomment-524558577
+memory-deny-write-execute
+noexec ${HOME}

@@ -1,0 +1,20 @@
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.  This file is offered as-is,
+# without any warranty.
+
+#include whitelist-common.inc
+
+net none
+machine-id
+nogroups
+shell none
+tracelog
+
+private-cache
+#private-bin
+
+#dbus-user filter
+dbus-system none
+
+#read-only ${HOME}

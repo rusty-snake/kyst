@@ -1,0 +1,22 @@
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.  This file is offered as-is,
+# without any warranty.
+
+include disable-devel.inc
+include disable-exec.inc
+include disable-xdg.inc
+
+include whitelist-runuser-common.inc
+include whitelist-var-common.inc
+
+net none
+nogroups
+
+disable-mnt
+private-cache
+private-dev
+private-tmp
+
+dbus-user none
+dbus-system none

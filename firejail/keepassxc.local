@@ -1,0 +1,23 @@
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.  This file is offered as-is,
+# without any warranty.
+
+ignore no3d
+
+noblacklist ${HOME}/Dokumente/KeePassXC
+
+#mkfile ${HOME}/.mozilla/native-messaging-hosts/org.keepassxc.keepassxc_browser.json
+#whitelist ${HOME}/.mozilla/native-messaging-hosts/org.keepassxc.keepassxc_browser.json
+
+mkdir ${HOME}/Dokumente/KeePassXC
+whitelist ${HOME}/Dokumente/KeePassXC
+
+mkdir ${HOME}/.config/keepassxc
+mkdir ${HOME}/.cache/keepassxc
+whitelist ${HOME}/.config/keepassxc
+whitelist ${HOME}/.cache/keepassxc
+include whitelist-common.inc
+
+# Breaks KPXC-Browser-Itegration
+include whitelist-runuser-common.inc

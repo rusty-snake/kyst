@@ -1,0 +1,14 @@
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.  This file is offered as-is,
+# without any warranty.
+
+ignore noexec ${HOME}
+noblacklist ${HOME}/.local/opt
+whitelist ${HOME}/.local/opt/supertuxkart
+read-only ${HOME}/.local/opt/supertuxkart
+
+protocol unix,inet,inet6
+ignore protocol
+
+private-dev

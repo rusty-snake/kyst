@@ -1,0 +1,34 @@
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.  This file is offered as-is,
+# without any warranty.
+
+include deny-java.inc
+
+include disable-interpreters.inc
+
+whitelist /usr/share/libexttextcat
+whitelist /usr/share/liblangtag
+whitelist /usr/share/libreoffice
+include whitelist-usr-share-common.inc
+include whitelist-runuser-common.inc
+
+mkdir ${HOME}/.config/libreoffice
+whitelist ${HOME}/.config/libreoffice
+include whitelist-common.inc
+
+whitelist ${DOCUMENTS}
+whitelist ${DOWNLOADS}
+read-only ${DOWNLOADS}
+
+net none
+protocol unix
+
+disable-mnt
+private-bin basename,dirname,grep,libreoffice,ls,sed,sh,uname
+
+dbus-user filter
+#dbus-user.own org.libreoffice.LibreOffice
+#dbus-user.own org.libreoffice.LibreOfficeIpc0
+#dbus-user.talk ca.desrt.dconf
+dbus-system none

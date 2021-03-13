@@ -1,0 +1,41 @@
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.  This file is offered as-is,
+# without any warranty.
+
+#
+# Testing
+#
+
+
+#
+# Stable
+#
+
+blacklist ${PATH}/busctl
+blacklist ${PATH}/dbus-send
+blacklist ${PATH}/gdbus
+blacklist ${PATH}/qdbus
+
+blacklist ${PATH}/systemctl
+blacklist ${PATH}/journalctl
+
+# Wayland only
+ipc-namespace
+
+include whitelist-runuser-common.inc
+
+nonewprivs
+
+# enable secccomp and block non-native syscalls
+seccomp
+seccomp.block-secondary
+seccomp-error-action kill
+
+# blacklist /opt and /srv for all profiles
+blacklist /opt
+blacklist /srv
+
+#
+# Deprecated
+#

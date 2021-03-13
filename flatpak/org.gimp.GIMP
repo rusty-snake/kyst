@@ -1,0 +1,13 @@
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.  This file is offered as-is,
+# without any warranty.
+
+[Context]
+shared=!network;
+filesystems=xdg-pictures;!host;!/tmp;xdg-config/gtk-3.0:ro;!xdg-config/GIMP;!xdg-run/gvfs;
+
+[Session Bus Policy]
+org.gtk.vfs.*=none
+org.gtk.vfs=none
+org.freedesktop.FileManager1=none

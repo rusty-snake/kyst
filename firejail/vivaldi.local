@@ -1,0 +1,22 @@
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.  This file is offered as-is,
+# without any warranty.
+
+net none
+private
+#private ${HOME}/.local/homes/vivaldi
+
+noblacklist /opt
+
+private-bin bash,cat,dirname,readlink,rm,vivaldi,vivaldi-stable
+private-cache
+private-etc alternatives,fonts,ld.so.cache
+include private-etc:net.inc
+include private-etc:sound.inc
+private-opt vivaldi
+
+#dbus-user filter
+#dbus-system filter
+dbus-user none
+dbus-system none

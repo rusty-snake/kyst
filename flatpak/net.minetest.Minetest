@@ -1,0 +1,12 @@
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.  This file is offered as-is,
+# without any warranty.
+
+[Context]
+sockets=x11;
+devices=dri;
+
+[Environment]
+LANG=en_US.UTF-8
+LC_ALL=en_US.UTF-8

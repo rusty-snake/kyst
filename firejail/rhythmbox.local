@@ -1,0 +1,23 @@
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.  This file is offered as-is,
+# without any warranty.
+
+include deny-python2.inc
+include deny-python3.inc
+
+#mkdir ${HOME}/.cache/rhythmbox
+mkdir ${HOME}/.local/share/rhythmbox
+#whitelist ${MUSIC}
+#whitelist ${HOME}/.cache/rhythmbox
+whitelist ${HOME}/.local/share/rhythmbox
+include whitelist-common.inc
+
+#private-etc
+
+dbus-system none
+
+#mkdir ${HOME}/.cache/rhythmbox
+#read-only ${HOME}
+#read-write ${HOME}/.cache/rhythmbox
+#read-write ${HOME}/.local/share/rhythmbox

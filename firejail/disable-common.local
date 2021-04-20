@@ -12,3 +12,5 @@ blacklist ${HOME}/.local/opt
 blacklist ${HOME}/.local/homes
 
 blacklist ${HOME}/Dokumente/KeePassXC
+
+blacklist ${HOME}/.dbus

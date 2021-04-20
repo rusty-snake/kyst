@@ -5,7 +5,7 @@
 
 include disable-passwdmgr.inc
 
-include chromium-common-hardened.inc
+include chromium-common-hardened.inc.profile
 
 novideo
 

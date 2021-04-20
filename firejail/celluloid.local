@@ -3,7 +3,7 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
-net none
+include deny-net.inc
+
 notv
 novideo
-protocol unix

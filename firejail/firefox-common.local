@@ -5,3 +5,7 @@
 
 include disable-passwdmgr.inc
 include disable-xdg.inc
+
+# Breaks WebRTC
+protocol unix,inet,inet6
+ignore protocol

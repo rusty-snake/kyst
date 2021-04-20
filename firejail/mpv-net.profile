@@ -13,7 +13,7 @@ include mpv-net.local
 include globals.local
 
 netfilter
-protocol unix,inet,inet6,netlink
+protocol unix,inet,inet6
 
 private
 

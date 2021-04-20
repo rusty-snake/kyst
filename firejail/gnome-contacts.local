@@ -3,9 +3,10 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
+include deny-net.inc
+
 #include whitelist-common.inc
 
-net none
 machine-id
 nogroups
 shell none

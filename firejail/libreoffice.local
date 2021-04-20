@@ -4,6 +4,7 @@
 # without any warranty.
 
 include deny-java.inc
+include deny-net.inc
 
 include disable-interpreters.inc
 
@@ -20,9 +21,6 @@ include whitelist-common.inc
 whitelist ${DOCUMENTS}
 whitelist ${DOWNLOADS}
 read-only ${DOWNLOADS}
-
-net none
-protocol unix
 
 disable-mnt
 private-bin basename,dirname,grep,libreoffice,ls,sed,sh,uname

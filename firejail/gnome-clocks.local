@@ -3,8 +3,7 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
-#net none
-#protocol unix
+#include deny-net.inc
 
 dbus-user filter
 dbus-user.own org.gnome.clocks

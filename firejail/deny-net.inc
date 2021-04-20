@@ -3,10 +3,7 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
-ignore nogroups
-ignore noroot
-ignore dbus-user none
-
-dbus-user filter
-dbus-user.own org.gnome.Logs
-dbus-user.talk ca.desrt.dconf
+net none
+protocol =unix
+ignore protocol unix,inet,inet6
+ignore protocol unix,inet,inet6,netlink

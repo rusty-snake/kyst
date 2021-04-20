@@ -3,5 +3,6 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
-net none
-protocol unix,netlink
+# kcmp is requeired for --enable-features=UseOzonePlatform --ozone-platform=wayland
+seccomp !chroot,!kcmp
+ignore seccomp

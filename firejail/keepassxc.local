@@ -7,6 +7,8 @@ ignore no3d
 
 noblacklist ${HOME}/Dokumente/KeePassXC
 
+include deny-net.inc
+
 #mkfile ${HOME}/.mozilla/native-messaging-hosts/org.keepassxc.keepassxc_browser.json
 #whitelist ${HOME}/.mozilla/native-messaging-hosts/org.keepassxc.keepassxc_browser.json
 

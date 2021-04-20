@@ -17,7 +17,7 @@ noblacklist ${HOME}/.config/youtube-dl
 include allow-python3.inc
 
 netfilter
-protocol unix,inet,inet6,netlink
+protocol unix,inet,inet6
 
 private
 private-bin env,python3*,youtube-dl

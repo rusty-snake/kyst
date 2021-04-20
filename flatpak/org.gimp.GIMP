@@ -5,7 +5,7 @@
 
 [Context]
 shared=!network;
-filesystems=xdg-pictures;!host;!/tmp;xdg-config/gtk-3.0:ro;!xdg-config/GIMP;!xdg-run/gvfs;
+filesystems=xdg-pictures;!host;!/tmp;xdg-config/gtk-3.0:ro;!xdg-config/GIMP;!xdg-run/gvfs;!xdg-run/gvfsd;
 
 [Session Bus Policy]
 org.gtk.vfs.*=none

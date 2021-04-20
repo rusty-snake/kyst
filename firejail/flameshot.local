@@ -3,11 +3,10 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
+include deny-net.inc
+
 mkdir ${HOME}/.config/flameshot
 whitelist ${HOME}/.config/Dharkael
 whitelist ${HOME}/.config/flameshot
 whitelist ${PICTURES}
 include whitelist-common.inc
-
-net none
-protocol unix

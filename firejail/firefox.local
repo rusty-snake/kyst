@@ -17,12 +17,7 @@ read-only ${HOME}/.rustup/toolchains/*/share/doc
 read-only ${HOME}/.config
 read-only ${HOME}/.local
 
-blacklist /tmp/.X11-unix
-blacklist ${RUNUSER}/.mutter-Xwaylandauth*
-blacklist /tmp/.ICE-unix
-blacklist ${RUNUSER}/ICEauthority
-rmenv DISPLAY
-rmenv XAUTHORITY
+include deny-X11.inc
 
 ipc-namespace
 

@@ -7,6 +7,9 @@
 # Testing
 #
 
+ignore include whitelist-run-common.inc
+whitelist /run/dbus/system_bus_socket
+whitelist /run/cups/cups.sock
 
 #
 # Stable

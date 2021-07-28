@@ -3,6 +3,4 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
-# kcmp is requeired for --enable-features=UseOzonePlatform --ozone-platform=wayland
-seccomp !chroot,!kcmp
-ignore seccomp
+private-etc alternatives,drirc,machine-id,openal,passwd

@@ -3,13 +3,9 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
-ignore noexec ${HOME}
-noblacklist ${HOME}/.local/opt
-whitelist ${HOME}/.local/opt/supertuxkart
-read-only ${HOME}/.local/opt/supertuxkart
-
-protocol unix,inet,inet6
-ignore protocol
-
-noinput
-private-dev
+blacklist /tmp/.X11-unix
+blacklist ${RUNUSER}/.mutter-Xwaylandauth*
+blacklist /tmp/.ICE-unix
+blacklist ${RUNUSER}/ICEauthority
+rmenv DISPLAY
+rmenv XAUTHORITY

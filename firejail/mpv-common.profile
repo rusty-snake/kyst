@@ -15,6 +15,8 @@ noblacklist ${HOME}/.config/mpv
 
 noblacklist /usr/lib64/liblua*
 
+blacklist /usr/libexec
+
 include disable-common.inc
 include disable-devel.inc
 include disable-exec.inc
@@ -35,6 +37,7 @@ ipc-namespace
 machine-id
 nodvd
 nogroups
+noinput
 nonewprivs
 noroot
 notv

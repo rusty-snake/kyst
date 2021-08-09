@@ -3,6 +3,9 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
+ignore mkdir ${HOME}/.pki
+ignore mkdir ${HOME}/.local/share/pki
+
 include disable-passwdmgr.inc
 include disable-xdg.inc
 

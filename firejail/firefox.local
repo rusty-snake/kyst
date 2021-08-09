@@ -3,25 +3,78 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
-noblacklist /usr/lib64/firefox
-
-nowhitelist ${DOWNLOADS}
-whitelist ${HOME}/Downloads/Firefox
-
-whitelist ${HOME}/GIT
-read-only ${HOME}/GIT
-noblacklist ${HOME}/.rustup
-whitelist ${HOME}/.rustup/toolchains/*/share/doc
-read-only ${HOME}/.rustup/toolchains/*/share/doc
-
-read-only ${HOME}/.config
-read-only ${HOME}/.local
+ignore include whitelist-runuser-common.inc
 
 include deny-X11.inc
 
-ipc-namespace
+#noblacklist /usr/lib64/firefox
 
-private-bin basename,bash,cat,dirname,expr,firefox,getenforce,ln,mkdir,restorecon,rm,sed,sh,tclsh,uname
-#private-bin false,pidof,rmdir,true
+whitelist ${HOME}/GIT
+noblacklist ${HOME}/.rustup
+whitelist ${HOME}/.rustup/toolchains/*/share/doc
 
-#private-etc
+noblacklist /sys/bus
+noblacklist /sys/dev
+noblacklist /sys/devices
+blacklist /sys/*
+noblacklist /sys/bus/pci
+blacklist /sys/bus/*
+noblacklist /sys/devices/pci0000:00
+#noblacklist /sys/devices/system
+blacklist /sys/devices/*
+
+blacklist /proc/acpi
+blacklist /proc/asound
+blacklist /proc/bootconfig
+blacklist /proc/buddyinfo
+blacklist /proc/cgroups
+blacklist /proc/cmdline
+blacklist /proc/consoles
+#blacklist /proc/cpuinfo
+blacklist /proc/crypto
+blacklist /proc/devices
+blacklist /proc/diskstats
+blacklist /proc/dma
+blacklist /proc/driver
+blacklist /proc/dynamic_debug
+blacklist /proc/execdomains
+blacklist /proc/fb
+blacklist /proc/filesystems
+blacklist /proc/fs
+blacklist /proc/i8k
+blacklist /proc/interrupts
+blacklist /proc/iomem
+blacklist /proc/ioports
+blacklist /proc/keys
+blacklist /proc/key-users
+blacklist /proc/latency_stats
+blacklist /proc/loadavg
+blacklist /proc/locks
+blacklist /proc/mdstat
+blacklist /proc/meminfo
+blacklist /proc/misc
+blacklist /proc/modules
+blacklist /proc/mtrr
+blacklist /proc/partitions
+blacklist /proc/pressure
+blacklist /proc/schedstat
+blacklist /proc/scsi
+blacklist /proc/softirqs
+blacklist /proc/stat
+blacklist /proc/swaps
+blacklist /proc/sys
+#blacklist /proc/sys/abi
+#blacklist /proc/sys/crypto
+#blacklist /proc/sys/debug
+#blacklist /proc/sys/dev
+#blacklist /proc/sys/fs
+#blacklist /proc/sys/kernel
+#blacklist /proc/sys/net
+#blacklist /proc/sys/user
+#blacklist /proc/sys/vm
+blacklist /proc/sysvipc
+blacklist /proc/tty
+blacklist /proc/uptime
+blacklist /proc/version
+blacklist /proc/vmstat
+blacklist /proc/zoneinfo

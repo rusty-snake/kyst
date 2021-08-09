@@ -3,4 +3,9 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
-private-etc alternatives/libnssckbi.so.x86_64,ca-certificates,crypto-policies/back-ends,nsswitch.conf,pki/ca-trust,pki/tls,resolv.conf,ssl
+[Context]
+shared=!ipc;
+sockets=!fallback-x11;!x11;
+
+[Session Bus Policy]
+org.gnome.Software=none

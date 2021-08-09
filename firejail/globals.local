@@ -7,9 +7,11 @@
 # Testing
 #
 
-ignore include whitelist-run-common.inc
-whitelist /run/dbus/system_bus_socket
-whitelist /run/cups/cups.sock
+# Say thanks to Pipewire
+machine-id
+
+# Because it's safe for GNOME >= 3.36.1
+dbus-user.talk org.freedesktop.Notifications
 
 #
 # Stable
@@ -23,15 +25,12 @@ blacklist ${PATH}/qdbus
 blacklist ${PATH}/systemctl
 blacklist ${PATH}/journalctl
 
+include whitelist-run-common.inc
+include whitelist-runuser-common.inc
+
 # Wayland only
 ipc-namespace
 
-include whitelist-runuser-common.inc
-
-nonewprivs
-
-# enable secccomp and block non-native syscalls
-seccomp
 seccomp.block-secondary
 seccomp-error-action kill
 

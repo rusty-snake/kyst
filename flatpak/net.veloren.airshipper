@@ -3,4 +3,5 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
-private-etc alternatives/libnssckbi.so.x86_64,ca-certificates,crypto-policies/back-ends,nsswitch.conf,pki/ca-trust,pki/tls,resolv.conf,ssl
+[Context]
+sockets=!fallback-x11;!wayland;

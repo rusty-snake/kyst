@@ -5,8 +5,8 @@
 
 [Context]
 shared=!network;
-sockets=x11;!pulseaudio;
-devices=dri;!all;
+sockets=!pulseaudio;
+devices=!all;dri;
 filesystems=xdg-config/gtk-3.0:ro;!/tmp;!host;
 
 [Session Bus Policy]

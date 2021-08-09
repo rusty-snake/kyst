@@ -4,10 +4,10 @@
 # without any warranty.
 
 [Context]
-shared=!network;
 filesystems=xdg-pictures;!host;!/tmp;xdg-config/gtk-3.0:ro;!xdg-config/GIMP;!xdg-run/gvfs;!xdg-run/gvfsd;
+shared=!network;
 
 [Session Bus Policy]
-org.gtk.vfs.*=none
-org.gtk.vfs=none
 org.freedesktop.FileManager1=none
+org.gtk.vfs=none
+org.gtk.vfs.*=none

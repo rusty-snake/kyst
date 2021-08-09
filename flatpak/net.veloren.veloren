@@ -4,7 +4,7 @@
 # without any warranty.
 
 [Context]
-shared=!network;
-sockets=!wayland;
 devices=!all;dri;
 filesystems=!xdg-pictures/veloren:create;
+shared=!network;
+sockets=!wayland;

@@ -3,15 +3,17 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
-ignore no3d
+# keepassxc --platform wayland
+include deny-X11.inc
 
-noblacklist ${HOME}/Dokumente/KeePassXC
+# Breaks KPXC-Browser-Itegration
+include whitelist-runuser-common.inc
 
-include deny-net.inc
 
 #mkfile ${HOME}/.mozilla/native-messaging-hosts/org.keepassxc.keepassxc_browser.json
 #whitelist ${HOME}/.mozilla/native-messaging-hosts/org.keepassxc.keepassxc_browser.json
 
+noblacklist ${HOME}/Dokumente/KeePassXC
 mkdir ${HOME}/Dokumente/KeePassXC
 whitelist ${HOME}/Dokumente/KeePassXC
 
@@ -21,5 +23,9 @@ whitelist ${HOME}/.config/keepassxc
 whitelist ${HOME}/.cache/keepassxc
 include whitelist-common.inc
 
-# Breaks KPXC-Browser-Itegration
-include whitelist-runuser-common.inc
+protocol unix
+ignore protocol
+seccomp
+ignore seccomp !name_to_handle_at
+
+disable-mnt

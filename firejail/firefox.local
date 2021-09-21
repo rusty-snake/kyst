@@ -3,11 +3,17 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
+ignore env LD_PRELOAD=/usr/lib64/libhardened_malloc.so
 ignore include whitelist-runuser-common.inc
 
-include deny-X11.inc
+include disable-proc.inc
+include disable-X11.inc
 
-#noblacklist /usr/lib64/firefox
+noblacklist /usr/lib64/firefox
+
+mkdir ${RUNUSER}/keepassxc
+whitelist ${RUNUSER}/keepassxc
+private-bin keepassxc-proxy,keepassxc-proxy-wrapper
 
 whitelist ${HOME}/GIT
 noblacklist ${HOME}/.rustup
@@ -22,59 +28,3 @@ blacklist /sys/bus/*
 noblacklist /sys/devices/pci0000:00
 #noblacklist /sys/devices/system
 blacklist /sys/devices/*
-
-blacklist /proc/acpi
-blacklist /proc/asound
-blacklist /proc/bootconfig
-blacklist /proc/buddyinfo
-blacklist /proc/cgroups
-blacklist /proc/cmdline
-blacklist /proc/consoles
-#blacklist /proc/cpuinfo
-blacklist /proc/crypto
-blacklist /proc/devices
-blacklist /proc/diskstats
-blacklist /proc/dma
-blacklist /proc/driver
-blacklist /proc/dynamic_debug
-blacklist /proc/execdomains
-blacklist /proc/fb
-blacklist /proc/filesystems
-blacklist /proc/fs
-blacklist /proc/i8k
-blacklist /proc/interrupts
-blacklist /proc/iomem
-blacklist /proc/ioports
-blacklist /proc/keys
-blacklist /proc/key-users
-blacklist /proc/latency_stats
-blacklist /proc/loadavg
-blacklist /proc/locks
-blacklist /proc/mdstat
-blacklist /proc/meminfo
-blacklist /proc/misc
-blacklist /proc/modules
-blacklist /proc/mtrr
-blacklist /proc/partitions
-blacklist /proc/pressure
-blacklist /proc/schedstat
-blacklist /proc/scsi
-blacklist /proc/softirqs
-blacklist /proc/stat
-blacklist /proc/swaps
-blacklist /proc/sys
-#blacklist /proc/sys/abi
-#blacklist /proc/sys/crypto
-#blacklist /proc/sys/debug
-#blacklist /proc/sys/dev
-#blacklist /proc/sys/fs
-#blacklist /proc/sys/kernel
-#blacklist /proc/sys/net
-#blacklist /proc/sys/user
-#blacklist /proc/sys/vm
-blacklist /proc/sysvipc
-blacklist /proc/tty
-blacklist /proc/uptime
-blacklist /proc/version
-blacklist /proc/vmstat
-blacklist /proc/zoneinfo

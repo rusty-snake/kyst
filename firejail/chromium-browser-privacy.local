@@ -3,7 +3,7 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
-include deny-X11.inc
+include disable-X11.inc
 
 private
 private-bin basename,bash,cat,chromium-browser-privacy,dirname,mkdir,readlink,sed,touch,which,xdg-settings

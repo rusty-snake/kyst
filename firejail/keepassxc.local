@@ -4,17 +4,15 @@
 # without any warranty.
 
 # keepassxc --platform wayland
-include deny-X11.inc
+include disable-X11.inc
 
-# Breaks KPXC-Browser-Itegration
 include whitelist-runuser-common.inc
 
-
-#mkfile ${HOME}/.mozilla/native-messaging-hosts/org.keepassxc.keepassxc_browser.json
-#whitelist ${HOME}/.mozilla/native-messaging-hosts/org.keepassxc.keepassxc_browser.json
+mkdir ${HOME}/.mozilla/native-messaging-hosts
+mkfile ${HOME}/.mozilla/native-messaging-hosts/org.keepassxc.keepassxc_browser.json
+whitelist ${HOME}/.mozilla/native-messaging-hosts/org.keepassxc.keepassxc_browser.json
 
 noblacklist ${HOME}/Dokumente/KeePassXC
-mkdir ${HOME}/Dokumente/KeePassXC
 whitelist ${HOME}/Dokumente/KeePassXC
 
 mkdir ${HOME}/.config/keepassxc
@@ -29,3 +27,10 @@ seccomp
 ignore seccomp !name_to_handle_at
 
 disable-mnt
+
+mkdir /run/user/1000/keepassxc
+whitelist /run/user/1000/keepassxc
+env XDG_RUNTIME_DIR=/run/user/1000/keepassxc
+env WAYLAND_DISPLAY=/run/user/1000/wayland-0
+#env DBUS_SESSION_BUS_ADDRESS is set by dbus-user filter
+

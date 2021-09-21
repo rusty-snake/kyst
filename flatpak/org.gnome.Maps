@@ -1,0 +1,10 @@
+[System Bus Policy]
+org.freedesktop.GeoClue2=none
+
+[Session Bus Policy]
+org.gnome.evolution.dataserver.AddressBook10=none
+org.gnome.evolution.dataserver.Calendar8=none
+org.gnome.evolution.dataserver.Sources5=none
+org.gnome.OnlineAccounts=none
+org.gnome.evolution.dataserver.Subprocess.Backend.*=none
+org.freedesktop.secrets=none

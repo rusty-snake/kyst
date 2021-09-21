@@ -3,8 +3,10 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
-mkdir ${HOME}/.xournalpp
-whitelist ${HOME}/.xournalpp
+mkdir ${HOME}/.cache/xournalpp
+mkdir ${HOME}/.config/xournalpp
+whitelist ${HOME}/.cache/xournalpp
+whitelist ${HOME}/.config/xournalpp
 whitelist ${HOME}/.texlive20*
 whitelist ${DOCUMENTS}
 include whitelist-common.inc

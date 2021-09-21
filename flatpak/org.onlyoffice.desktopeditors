@@ -1,13 +1,7 @@
-# Copying and distribution of this file, with or without modification,
-# are permitted in any medium without royalty provided the copyright
-# notice and this notice are preserved.  This file is offered as-is,
-# without any warranty.
-
 [Context]
-shared=!network;
-sockets=!pulseaudio;
-devices=!all;dri;
-filesystems=xdg-config/gtk-3.0:ro;!/tmp;!host;
+shared=!network;ipc;
+sockets=!pulseaudio;!fallback-x11;
+filesystems=!/tmp;!xdg-config/gtk-3.0;xdg-download;xdg-documents;xdg-pictures:ro;
 
 [Session Bus Policy]
 org.gtk.vfs.*=none

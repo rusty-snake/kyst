@@ -3,10 +3,6 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
-[Context]
-shared=!network;!ipc;
-sockets=!x11;!pulseaudio;
-devices=!all;dri;
+include disable-proc.inc
 
-[Session Bus Policy]
-org.a11y.Bus=none
+private-lib libcanberra-gtk3.so.0,libpulse.so.0,libXt.so.6

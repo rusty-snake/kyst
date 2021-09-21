@@ -9,7 +9,7 @@ private
 noblacklist /opt
 whitelist /opt/brave
 
-include deny-X11.inc
+include disable-X11.inc
 
 private-cache
 private-etc fonts,passwd

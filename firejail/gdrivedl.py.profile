@@ -5,7 +5,6 @@ include gdrivedl.py.local
 # Persistent global definitions
 include globals.local
 
-blacklist /tmp/.X11-unix
 blacklist ${RUNUSER}
 blacklist /usr/libexec
 
@@ -15,9 +14,9 @@ include disable-common.inc
 include disable-devel.inc
 include disable-exec.inc
 include disable-interpreters.inc
-include disable-passwdmgr.inc
 include disable-programs.inc
 include disable-shell.inc
+include disable-X11.inc
 include disable-xdg.inc
 
 whitelist ${DOWNLOADS}

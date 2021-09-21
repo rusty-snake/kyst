@@ -1,0 +1,7 @@
+[Context]
+shared=!network;
+sockets=!pulseaudio;
+filesystems=xdg-download;xdg-documents;xdg-pictures:ro;
+
+[Session Bus Policy]
+org.gtk.vfs.*=none

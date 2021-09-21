@@ -3,10 +3,4 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
-[Context]
-sockets=x11;
-devices=dri;
-
-[Environment]
-LANG=en_US.UTF-8
-LC_ALL=en_US.UTF-8
+whitelist ${HOME}/.local/lib/python*

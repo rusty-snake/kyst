@@ -7,11 +7,19 @@
 # Testing
 #
 
+env LD_PRELOAD=/usr/lib64/libhardened_malloc.so
+
+include disable-proc.inc
+
 # Say thanks to Pipewire
 machine-id
 
 # Because it's safe for GNOME >= 3.36.1
 dbus-user.talk org.freedesktop.Notifications
+
+dbus-user.talk org.freedesktop.portal.Desktop
+#dbus-user.talk org.freedesktop.portal.Documents
+#dbus-user.talk org.freedesktop.portal.*
 
 #
 # Stable

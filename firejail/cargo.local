@@ -3,9 +3,5 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
-[Context]
-shared=!ipc;
-sockets=!fallback-x11;!x11;
-
-[Session Bus Policy]
-org.gnome.Software=none
+whitelist ${HOME}/.cargo
+whitelist ${HOME}/.rustup

@@ -8,7 +8,6 @@ original permissions) of an app and `flatpak info -M <APP-ID>` to see the
 current permissions.
 
 `global` is a special override which affects _all_ flatpaks.
-I do not use it at this time.
 
 ---------------------------------------------------------------------
 

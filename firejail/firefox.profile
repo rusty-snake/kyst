@@ -22,7 +22,7 @@ blacklist /opt
 blacklist /srv
 blacklist /usr/games
 blacklist /usr/libexec
-blacklist /usr/local
+#blacklist /usr/local
 blacklist /usr/src
 blacklist /var
 
@@ -30,7 +30,6 @@ include disable-common.inc
 include disable-devel.inc
 include disable-exec.inc
 include disable-interpreters.inc
-include disable-passwdmgr.inc
 include disable-programs.inc
 include disable-shell.inc
 include disable-xdg.inc
@@ -79,7 +78,7 @@ seccomp-error-action kill
 shell none
 
 disable-mnt
-private-bin basename,bash,cat,dirname,expr,firefox,getenforce,ln,mkdir,restorecon,rm,sed,sh,uname,pidof,rmdir
+private-bin basename,bash,cat,dirname,expr,firefox,getenforce,ln,mkdir,pidof,restorecon,rm,rmdir,sed,sh,uname
 private-dev
 private-etc firefox,fonts,localtime,mime.types,selinux
 include private-etc:net.inc

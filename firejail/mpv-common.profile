@@ -1,8 +1,3 @@
-# Copying and distribution of this file, with or without modification,
-# are permitted in any medium without royalty provided the copyright
-# notice and this notice are preserved.  This file is offered as-is,
-# without any warranty.
-
 # Firejail profile for mpv
 # Description: Video player based on MPlayer/mplayer2
 quiet
@@ -54,8 +49,6 @@ private-bin mpv
 private-dev
 private-etc alternatives,fonts,ld.so.cache,ld.so.conf,ld.so.conf.d,ld.so.preload,mpv
 private-tmp
-
-include private-etc:sound.inc
 
 dbus-user none
 dbus-system none

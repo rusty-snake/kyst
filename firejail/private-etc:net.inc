@@ -1,6 +1,1 @@
-# Copying and distribution of this file, with or without modification,
-# are permitted in any medium without royalty provided the copyright
-# notice and this notice are preserved.  This file is offered as-is,
-# without any warranty.
-
 private-etc alternatives/libnssckbi.so.x86_64,ca-certificates,crypto-policies/back-ends,nsswitch.conf,pki/ca-trust,pki/tls,resolv.conf,ssl

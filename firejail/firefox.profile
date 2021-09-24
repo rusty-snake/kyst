@@ -1,8 +1,3 @@
-# Copying and distribution of this file, with or without modification,
-# are permitted in any medium without royalty provided the copyright
-# notice and this notice are preserved.  This file is offered as-is,
-# without any warranty.
-
 # Firejail profile for firefox
 # Description: Safe and easy web browser from Mozilla
 # This file is overwritten after every install/update

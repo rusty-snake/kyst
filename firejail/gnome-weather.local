@@ -1,0 +1,15 @@
+blacklist /usr/libexec
+
+include disable-shell.inc
+
+whitelist /usr/share/org.gnome.Weather
+include whitelist-common.inc
+include whitelist-usr-share-common.inc
+
+#private-bin
+private-cache
+#private-etc
+
+dbus-user filter
+dbus-user.own org.gnome.Weather
+dbus-system none

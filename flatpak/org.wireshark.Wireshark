@@ -1,0 +1,5 @@
+[Context]
+filesystems=!xdg-config/kdeglobals:ro;!home:ro;!xdg-public-share;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=none

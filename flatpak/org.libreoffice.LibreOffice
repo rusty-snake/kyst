@@ -1,6 +1,6 @@
 [Context]
 shared=!network;
-sockets=!pulseaudio;
+sockets=!pulseaudio;cups;
 filesystems=xdg-download;xdg-documents;xdg-pictures:ro;
 
 [Session Bus Policy]

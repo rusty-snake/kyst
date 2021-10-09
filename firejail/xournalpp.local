@@ -3,7 +3,10 @@ mkdir ${HOME}/.config/xournalpp
 whitelist ${HOME}/.cache/xournalpp
 whitelist ${HOME}/.config/xournalpp
 whitelist ${HOME}/.texlive20*
+whitelist ${PICTURES}
 whitelist ${DOCUMENTS}
 include whitelist-common.inc
 
 disable-mnt
+
+read-only ${PICTURES}

@@ -25,9 +25,6 @@ blacklist ${PATH}/dbus-send
 blacklist ${PATH}/gdbus
 blacklist ${PATH}/qdbus
 
-blacklist ${PATH}/systemctl
-blacklist ${PATH}/journalctl
-
 include whitelist-run-common.inc
 include whitelist-runuser-common.inc
 

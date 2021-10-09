@@ -20,5 +20,7 @@ whitelist ${HOME}/.config/brave
 
 private-bin bash,brave-browser,cat,dirname,mkdir,readlink,touch,which,xdg-settings
 
+name brave
+
 # Redirect
 include chromium-common.profile

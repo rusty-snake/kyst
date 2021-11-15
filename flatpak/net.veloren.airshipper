@@ -1,2 +1,2 @@
 [Context]
-sockets=!fallback-x11;!wayland;
+sockets=!wayland

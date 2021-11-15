@@ -1,3 +1,6 @@
+[Context]
+shared=!ipc
+
 [System Bus Policy]
 org.freedesktop.GeoClue2=none
 

@@ -1,7 +1,7 @@
 [Context]
-shared=!network;
-sockets=!pulseaudio;cups;
-filesystems=xdg-download;xdg-documents;xdg-pictures:ro;
+shared=!ipc;!network
+sockets=fallback-x11
+filesystems=!host
 
 [Session Bus Policy]
 org.gtk.vfs.*=none

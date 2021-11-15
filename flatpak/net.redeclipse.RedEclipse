@@ -1,4 +1,4 @@
 [Context]
 shared=!ipc;!network
-sockets=fallback-x11
+sockets=fallback-x11;wayland
 devices=!all;dri

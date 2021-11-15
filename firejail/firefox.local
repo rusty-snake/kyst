@@ -1,7 +1,6 @@
 ignore env LD_PRELOAD=/usr/lib64/libhardened_malloc.so
 ignore include whitelist-runuser-common.inc
 
-include disable-proc.inc
 include disable-X11.inc
 
 noblacklist /usr/lib64/firefox

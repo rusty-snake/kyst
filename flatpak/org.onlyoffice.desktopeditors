@@ -1,7 +1,8 @@
 [Context]
-shared=!network;ipc;
-sockets=!pulseaudio;!fallback-x11;
-filesystems=!/tmp;!xdg-config/gtk-3.0;xdg-download;xdg-documents;xdg-pictures:ro;
+shared=!ipc;!network
+sockets=fallback-x11
+devices=!all;dri
+filesystems=!/tmp;!xdg-config/gtk-3.0;xdg-pictures:ro;xdg-documents;!host
 
 [Session Bus Policy]
 org.gtk.vfs.*=none

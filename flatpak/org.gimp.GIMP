@@ -1,6 +1,6 @@
 [Context]
-shared=!network;
-filesystems=!xdg-run/gvfs;!xdg-run/gvfsd;!/tmp;!xdg-config/gtk-3.0;!xdg-config/GIMP;xdg-pictures;
+shared=!network
+filesystems=!xdg-run/gvfs;!xdg-run/gvfsd;!/tmp;!xdg-config/gtk-3.0;!xdg-config/GIMP;xdg-pictures;!host
 
 [Session Bus Policy]
 org.gtk.vfs.*=none

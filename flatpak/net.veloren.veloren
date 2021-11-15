@@ -1,4 +1,0 @@
-[Context]
-shared=!network;
-sockets=!wayland;
-filesystems=!xdg-pictures/veloren:create;

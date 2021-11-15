@@ -1,2 +1,4 @@
 [Context]
-shared=!network;
+shared=!ipc;!network
+sockets=wayland
+devices=!shm

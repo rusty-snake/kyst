@@ -1,3 +1,0 @@
-[Context]
-shared=!ipc;!network
-devices=!all;dri

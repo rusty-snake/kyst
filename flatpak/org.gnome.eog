@@ -1,4 +1,3 @@
 [Session Bus Policy]
 org.gtk.vfs.*=none
 org.gtk.vfs=none
-org.freedesktop.FileManager1=none

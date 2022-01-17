@@ -1,1 +1,26 @@
+include disable-exec.inc
+include disable-proc.inc
+
+mkdir ${HOME}/.cache/simple-scan
+whitelist ${HOME}/.cache/simple-scan
+whitelist ${DOCUMENTS}
+whitelist ${PICTURES}
+include whitelist-common.inc
+include whitelist-run-common.inc
 include whitelist-runuser-common.inc
+
+machine-id
+noinput
+seccomp.block-secondary
+
+disable-mnt
+private-bin simple-scan
+private-cache
+private-dev
+private-tmp
+
+dbus-user filter
+dbus-user.own org.gnome.SimpleScan
+dbus-user.talk ca.desrt.dconf
+dbus-system filter
+dbus-user.talk org.opensuse.CupsPkHelper.Mechanism

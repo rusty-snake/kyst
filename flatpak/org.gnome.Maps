@@ -1,8 +1,5 @@
 [Context]
-shared=!ipc
-
-[System Bus Policy]
-org.freedesktop.GeoClue2=none
+shared=network;
 
 [Session Bus Policy]
 org.gnome.evolution.dataserver.AddressBook10=none

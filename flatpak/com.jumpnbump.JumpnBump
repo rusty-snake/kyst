@@ -1,4 +1,0 @@
-[Context]
-shared=!ipc;!network
-sockets=!session-bus;fallback-x11
-filesystems=!host

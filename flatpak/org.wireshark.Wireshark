@@ -1,7 +1,0 @@
-[Context]
-shared=!ipc
-sockets=fallback-x11
-filesystems=!xdg-config/kdeglobals:ro;!home:ro;!xdg-public-share
-
-[Session Bus Policy]
-com.canonical.AppMenu.Registrar=none

@@ -9,3 +9,5 @@ blacklist ${HOME}/.local/homes
 blacklist ${HOME}/Dokumente/KeePassXC
 
 blacklist ${HOME}/.dbus
+
+blacklist ${HOME}/.local/state/wireplumber

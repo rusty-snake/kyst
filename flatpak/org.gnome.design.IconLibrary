@@ -1,5 +1,0 @@
-[Context]
-shared=!ipc
-
-[Session Bus Policy]
-org.gnome.design.IconLibrary.SearchProvider=none

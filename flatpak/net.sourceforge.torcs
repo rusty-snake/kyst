@@ -1,4 +1,0 @@
-[Context]
-shared=!ipc
-sockets=fallback-x11;wayland
-devices=!all;dri

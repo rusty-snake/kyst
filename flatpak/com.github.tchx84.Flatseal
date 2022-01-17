@@ -1,2 +1,2 @@
 [Context]
-shared=!ipc
+filesystems=xdg-data/flatpak/overrides:create;/var/lib/flatpak/app:ro;xdg-data/flatpak/app:ro;

@@ -1,5 +1,6 @@
 [Context]
-filesystems=home;
+devices=dri;!all;
 
 [Session Bus Policy]
 org.gtk.vfs.*=none
+org.gtk.vfs=none

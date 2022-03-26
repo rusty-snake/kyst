@@ -1,4 +1,0 @@
-include whitelist-runuser-common.inc
-
-dbus-user none
-dbus-system none

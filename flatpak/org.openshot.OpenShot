@@ -1,0 +1,6 @@
+[Context]
+sockets=wayland;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=none
+org.freedesktop.Flatpak=none

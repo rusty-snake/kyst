@@ -1,3 +1,6 @@
+[Context]
+sockets=x11;
+
 [Session Bus Policy]
 org.gtk.vfs.*=none
 org.gtk.vfs=none

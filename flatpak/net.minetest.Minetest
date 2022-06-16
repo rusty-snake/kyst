@@ -1,3 +1,4 @@
 [Context]
 shared=network
+sockets=fallback-x11;x11
 devices=!all;dri

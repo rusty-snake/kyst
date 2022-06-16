@@ -1,7 +1,8 @@
 [Context]
-sockets=x11;
+sockets=fallback-x11;x11
 
 [Session Bus Policy]
+org.kde.kwin.Screenshot=none
 org.gtk.vfs.*=none
-org.gtk.vfs=none
+org.gnome.Shell.Screenshot=none
 org.freedesktop.FileManager1=none

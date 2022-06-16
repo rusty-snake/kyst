@@ -1,0 +1,8 @@
+[System Bus Policy]
+org.freedesktop.login1=none
+org.freedesktop.timedate1=none
+
+[Session Bus Policy]
+org.gnome.ControlCenter=none
+org.gnome.SettingsDaemon.Color=none
+org.gnome.OnlineAccounts=none

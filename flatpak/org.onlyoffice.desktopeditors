@@ -1,9 +1,5 @@
 [Context]
-sockets=x11;!pulseaudio;
-devices=dri;!all;
-shared=ipc;
-filesystems=xdg-documents/onlyoffice:create;
+devices=!all;dri
 
 [Session Bus Policy]
 org.gtk.vfs.*=none
-org.gtk.vfs=none

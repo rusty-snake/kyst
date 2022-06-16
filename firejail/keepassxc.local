@@ -28,4 +28,3 @@ whitelist /run/user/1000/keepassxc
 env XDG_RUNTIME_DIR=/run/user/1000/keepassxc
 env WAYLAND_DISPLAY=/run/user/1000/wayland-0
 #env DBUS_SESSION_BUS_ADDRESS is set by dbus-user filter
-

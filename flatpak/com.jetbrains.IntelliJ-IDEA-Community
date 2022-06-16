@@ -1,0 +1,9 @@
+[Context]
+sockets=!ssh-auth
+devices=!all;dri
+
+[Session Bus Policy]
+org.freedesktop.Flatpak=none
+com.canonical.AppMenu.Registrar=none
+org.gnome.keyring.SystemPrompter=none
+org.freedesktop.secrets=none

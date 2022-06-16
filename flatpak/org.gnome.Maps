@@ -1,5 +1,5 @@
 [Context]
-shared=network;
+shared=network
 
 [Session Bus Policy]
 org.gnome.evolution.dataserver.AddressBook10=none

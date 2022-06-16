@@ -11,3 +11,5 @@ blacklist ${HOME}/Dokumente/KeePassXC
 blacklist ${HOME}/.dbus
 
 blacklist ${HOME}/.local/state/wireplumber
+
+read-only ${HOME}/.local/share/bash-completion

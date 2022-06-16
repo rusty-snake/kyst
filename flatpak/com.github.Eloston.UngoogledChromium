@@ -1,14 +1,15 @@
 [Context]
-sockets=!cups;
-devices=dri;!all;
+sockets=!cups
+devices=!all;dri
 
 [Session Bus Policy]
-com.canonical.AppMenu.Registrar=none
-org.kde.kwalletd5=none
-org.gnome.SessionManager=none
-org.freedesktop.ScreenSaver=none
 org.freedesktop.secrets=none
+org.freedesktop.Notifications=none
 org.freedesktop.FileManager1=none
+org.kde.kwalletd5=none
+org.freedesktop.ScreenSaver=none
+com.canonical.AppMenu.Registrar=none
+org.gnome.SessionManager=none
 
 [System Bus Policy]
 org.freedesktop.Avahi=none

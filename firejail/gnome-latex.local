@@ -1,3 +1,0 @@
-dbus-user filter
-dbus-user.own org.gnome.gnome-latex
-dbus-user.talk ca.desrt.dconf

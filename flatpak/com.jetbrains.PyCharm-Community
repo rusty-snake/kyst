@@ -1,6 +1,6 @@
 [Context]
-sockets=!ssh-auth
-devices=dri
+sockets=!session-bus;!pulseaudio;wayland
+devices=!all;dri
 
 [Session Bus Policy]
 org.freedesktop.secrets=none

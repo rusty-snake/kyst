@@ -1,5 +1,0 @@
-mkdir ${HOME}/.cache/peek
-whitelist ${HOME}/.cache/peek
-whitelist ${PICTURES}
-whitelist ${VIDEOS}
-include whitelist-common.inc

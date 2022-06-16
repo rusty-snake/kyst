@@ -1,4 +1,0 @@
-nowhitelist ${DOWNLOADS}
-nowhitelist ${PICTURES}
-
-dbus-system none

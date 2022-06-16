@@ -1,2 +1,5 @@
+[Context]
+devices=dri
+
 [Session Bus Policy]
 org.gtk.vfs.*=none

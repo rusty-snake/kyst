@@ -1,6 +1,7 @@
 [Context]
-devices=dri;!all;
+devices=!all;dri
 
 [Session Bus Policy]
 org.gtk.vfs.*=none
+org.gnome.SettingsDaemon.MediaKeys=none
 org.gtk.vfs=none

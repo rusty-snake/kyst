@@ -1,5 +1,0 @@
-[Context]
-filesystems=xdg-run/dconf;host:ro;
-
-[Session Bus Policy]
-org.freedesktop.Flatpak=none

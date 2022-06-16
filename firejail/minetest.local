@@ -1,5 +1,0 @@
-net none
-
-private-etc alternatives,drirc,fonts,group,host.conf,hostname,hosts,ld.so.cache,ld.so.preload,localtime,passwd
-
-include private-etc:net.inc

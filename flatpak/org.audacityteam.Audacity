@@ -1,8 +1,7 @@
 [Context]
-devices=dri;!all;
-sockets=wayland;
-filesystems=xdg-run/pipewire-0;xdg-music;
-persistent=.audacity-data;
+sockets=wayland
+devices=!all;dri
+persistent=.audacity-data
 
 [System Bus Policy]
 org.freedesktop.RealtimeKit1=none

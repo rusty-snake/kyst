@@ -1,4 +1,0 @@
-dbus-user filter
-dbus-user.own org.gnome.gedit
-dbus-user.talk ca.desrt.dconf
-dbus-system none

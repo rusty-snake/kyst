@@ -1,0 +1,7 @@
+[Context]
+sockets=!ssh-auth;!pulseaudio
+devices=!all;dri
+
+[Session Bus Policy]
+org.freedesktop.Flatpak=none
+org.freedesktop.secrets=none

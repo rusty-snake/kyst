@@ -1,0 +1,10 @@
+[Context]
+sockets=!pulseaudio
+devices=dri
+
+[Environment]
+DCONF_USER_CONFIG_DIR=
+
+[Session Bus Policy]
+org.gtk.vfs.*=none
+ca.desrt.dconf=none

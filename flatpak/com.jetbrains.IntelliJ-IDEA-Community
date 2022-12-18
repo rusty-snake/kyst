@@ -1,5 +1,6 @@
 [Context]
-sockets=!ssh-auth
+shared=ipc
+sockets=!ssh-auth;x11
 devices=!all;dri
 
 [Session Bus Policy]

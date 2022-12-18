@@ -66,12 +66,11 @@ noroot
 notv
 nou2f
 novideo
-protocol unix,inet
+protocol unix,inet,inet6
 seccomp !chroot
 #seccomp.keep
 seccomp.block-secondary
 seccomp-error-action kill
-shell none
 
 disable-mnt
 private-bin basename,bash,cat,dirname,expr,firefox,getenforce,ln,mkdir,pidof,restorecon,rm,rmdir,sed,sh,uname

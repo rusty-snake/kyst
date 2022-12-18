@@ -1,6 +1,8 @@
 [Context]
-sockets=!ssh-auth;!pulseaudio
-devices=!all;dri
+shared=ipc;network
+sockets=!ssh-auth;!pulseaudio;x11
+devices=!all;kvm;dri
+persistent=AndroidStudioProjects;Android;.java;.android
 
 [Session Bus Policy]
 org.freedesktop.Flatpak=none

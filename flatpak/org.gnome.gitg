@@ -1,6 +1,6 @@
 [Context]
-sockets=!ssh-auth
-devices=dri
+sockets=!ssh-auth;
+devices=dri;
 
 [Session Bus Policy]
 org.freedesktop.secrets=none

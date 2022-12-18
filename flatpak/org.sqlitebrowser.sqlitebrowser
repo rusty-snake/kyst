@@ -1,3 +1,4 @@
 [Session Bus Policy]
 com.canonical.AppMenu.Registrar=none
 org.kde.kconfig.notify=none
+org.kde.KGlobalSettings=none

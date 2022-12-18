@@ -1,0 +1,9 @@
+[Context]
+shared=network
+devices=!all;dri
+
+[Session Bus Policy]
+org.kde.StatusNotifierWatcher=none
+org.freedesktop.portal.Background=none
+org.freedesktop.portal.Fcitx=none
+org.kde.*=none

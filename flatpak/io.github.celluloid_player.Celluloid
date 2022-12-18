@@ -1,5 +1,7 @@
 [Context]
-devices=!all;dri
+devices=dri;!all;
+sockets=!pulseaudio;
+filesystems=xdg-run/pipewire-0:ro;
 
 [Session Bus Policy]
 org.gtk.vfs.*=none

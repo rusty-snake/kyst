@@ -1,0 +1,2 @@
+[Context]
+filesystems=xdg-download;xdg-pictures:ro;xdg-documents

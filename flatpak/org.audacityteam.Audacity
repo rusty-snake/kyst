@@ -1,6 +1,7 @@
 [Context]
 sockets=wayland
 devices=!all;dri
+filesystems=xdg-music
 persistent=.audacity-data
 
 [System Bus Policy]

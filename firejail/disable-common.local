@@ -12,4 +12,7 @@ blacklist ${HOME}/.dbus
 
 blacklist ${HOME}/.local/state/wireplumber
 
+read-only ${HOME}/.local/share/nautilus/scripts
 read-only ${HOME}/.local/share/bash-completion
+
+blacklist ${RUNUSER}/at-spi2-*

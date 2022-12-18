@@ -39,7 +39,6 @@ nou2f
 novideo
 seccomp
 seccomp.block-secondary
-shell none
 tracelog
 
 disable-mnt

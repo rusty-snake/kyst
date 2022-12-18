@@ -1,6 +1,8 @@
 [Context]
-sockets=wayland
+sockets=wayland;
 
 [Session Bus Policy]
 com.canonical.AppMenu.Registrar=none
 org.freedesktop.Flatpak=none
+org.kde.KGlobalSettings=none
+org.kde.kconfig.notify=none

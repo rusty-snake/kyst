@@ -1,14 +1,15 @@
 [Context]
-sockets=!cups
-devices=!all;dri
-
-[System Bus Policy]
-org.freedesktop.Avahi=none
-org.freedesktop.UPower=none
+sockets=!cups;
+devices=dri;!all;
 
 [Session Bus Policy]
 org.gnome.SessionManager=none
 org.gnome.Mutter.IdleMonitor.*=none
+org.kde.kwalletd5=none
 org.freedesktop.ScreenSaver=none
 org.freedesktop.secrets=none
 org.freedesktop.FileManager1=none
+
+[System Bus Policy]
+org.freedesktop.Avahi=none
+org.freedesktop.UPower=none

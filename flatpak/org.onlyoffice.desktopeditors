@@ -1,5 +1,6 @@
 [Context]
-devices=!all;dri
+devices=dri;!all;
+sockets=x11;
 
 [Session Bus Policy]
 org.gtk.vfs.*=none

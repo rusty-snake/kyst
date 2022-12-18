@@ -1,5 +1,6 @@
 [Context]
 sockets=fallback-x11;x11
+filesystems=xdg-pictures
 
 [Session Bus Policy]
 org.kde.kwin.Screenshot=none

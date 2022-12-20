@@ -1,8 +1,0 @@
-[Context]
-filesystems=xdg-music
-
-[Environment]
-DCONF_USER_CONFIG_DIR=
-
-[Session Bus Policy]
-ca.desrt.dconf=none

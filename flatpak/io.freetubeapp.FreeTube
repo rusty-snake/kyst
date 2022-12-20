@@ -1,3 +1,0 @@
-[Context]
-shared=network
-sockets=!session-bus;wayland

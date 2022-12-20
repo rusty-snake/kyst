@@ -1,8 +1,0 @@
-[Session Bus Policy]
-org.gnome.SettingsDaemon.Housekeeping=none
-org.gnome.ControlCenter=none
-org.gtk.vfs.*=none
-org.freedesktop.Tracker3.Miner.Files.Control=none
-com.intel.dleyna-renderer=none
-org.gnome.SettingsDaemon=none
-org.freedesktop.FileManager1=none

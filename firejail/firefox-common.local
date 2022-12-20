@@ -2,7 +2,3 @@ ignore mkdir ${HOME}/.pki
 ignore mkdir ${HOME}/.local/share/pki
 
 include disable-xdg.inc
-
-# Breaks WebRTC
-protocol unix,inet,inet6
-ignore protocol

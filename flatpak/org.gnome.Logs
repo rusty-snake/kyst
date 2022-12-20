@@ -1,3 +1,0 @@
-[Context]
-devices=dri
-filesystems=/var/log/journal:ro

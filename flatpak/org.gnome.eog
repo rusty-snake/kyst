@@ -1,5 +1,6 @@
 [Context]
 devices=dri
+filesystems=xdg-pictures:ro
 
 [Session Bus Policy]
 org.gtk.vfs.*=none

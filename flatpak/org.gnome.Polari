@@ -1,9 +1,0 @@
-[Context]
-shared=network;
-
-[Session Bus Policy]
-org.freedesktop.secrets=none
-org.freedesktop.Telepathy.Client.GnomeShell.*=none
-
-[Environment]
-TPL_LOG_DIR=

@@ -1,3 +1,6 @@
 [Context]
 sockets=wayland
 devices=!shm
+
+[Environment]
+SDL_VIDEODRIVER=wayland

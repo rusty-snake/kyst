@@ -1,9 +1,10 @@
 [Context]
-sockets=x11;
-filesystems=xdg-pictures/Screenshots:create;
-shared=ipc;
+shared=network;
+filesystems=xdg-run/Nextcloud:create;
 
 [Session Bus Policy]
 com.canonical.AppMenu.Registrar=none
 org.kde.kconfig.notify=none
 org.kde.KGlobalSettings=none
+org.kde.StatusNotifierWatcher=none
+org.kde.*=none

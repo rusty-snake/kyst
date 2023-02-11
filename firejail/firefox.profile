@@ -19,7 +19,7 @@ blacklist /usr/games
 blacklist /usr/libexec
 #blacklist /usr/local
 blacklist /usr/src
-blacklist /var
+#blacklist /var
 
 include disable-common.inc
 include disable-devel.inc
@@ -47,6 +47,7 @@ whitelist /usr/share/gnome-shell/search-providers/firefox-search-provider.ini
 whitelist /usr/share/gtk-doc/html
 whitelist /usr/share/mozilla
 whitelist /usr/share/webext
+whitelist /var/run
 #include whitelist-common.inc
 include whitelist-run-common.inc
 #include whitelist-runuser-common.inc
@@ -66,7 +67,7 @@ noroot
 notv
 nou2f
 novideo
-protocol unix,inet,inet6
+protocol unix,inet,inet6,netlink
 seccomp !chroot
 #seccomp.keep
 seccomp.block-secondary
@@ -75,9 +76,8 @@ seccomp-error-action kill
 disable-mnt
 private-bin basename,bash,cat,dirname,expr,firefox,getenforce,ln,mkdir,pidof,restorecon,rm,rmdir,sed,sh,uname
 private-dev
-private-etc firefox,fonts,localtime,mime.types,selinux
+private-etc firefox,fonts,localtime,mime.types,pki
 include private-etc:net.inc
-#private-lib
 private-tmp
 
 dbus-user filter
@@ -87,7 +87,8 @@ dbus-user.talk org.freedesktop.Notifications
 dbus-system none
 
 env PATH=/usr/bin
-read-only ${HOME}
-read-write ${HOME}/.cache
-read-write ${HOME}/.mozilla
-read-write ${HOME}/Downloads/Firefox
+# Breaks downloading, may related to gtk file-dialog but could not get it working.
+#read-only ${HOME}
+#read-write ${HOME}/.cache
+#read-write ${HOME}/.mozilla
+#read-write ${HOME}/Downloads/Firefox

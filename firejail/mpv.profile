@@ -8,6 +8,7 @@ include mpv.local
 include globals.local
 
 ignore nodvd
+ignore disable-mnt
 
 noblacklist ${MUSIC}
 noblacklist ${PICTURES}

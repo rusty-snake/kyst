@@ -2,7 +2,7 @@
 shared=ipc
 sockets=!ssh-auth;x11
 devices=!all;dri
-filesystems=~/.bashrc:ro;~/.gitconfig:ro;~/.cargo:ro;~/.rustup:ro
+filesystems=~/.bashrc:ro;~/.gitconfig:ro;~/.cargo:ro;~/.rustup:ro;~/_Devel
 persistent=.java
 
 [Session Bus Policy]

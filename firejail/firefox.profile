@@ -68,7 +68,7 @@ notv
 nou2f
 novideo
 protocol unix,inet,inet6,netlink
-seccomp !chroot
+seccomp !chroot,!set_mempolicy
 #seccomp.keep
 seccomp.block-secondary
 seccomp-error-action kill

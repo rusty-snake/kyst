@@ -1,6 +1,8 @@
 [Context]
-devices=dri;!all;
-sockets=x11;
+shared=ipc
+sockets=x11
+devices=!all;dri
+filesystems=xdg-documents/OnlyOffice:create
 
 [Session Bus Policy]
 org.gtk.vfs.*=none

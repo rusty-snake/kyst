@@ -1,4 +1,4 @@
 [Context]
-shared=!network;!ipc;
-sockets=!x11;!fallback-x11;
-filesystems=!host:reset;
+shared=!ipc;!network
+sockets=!fallback-x11;!x11
+filesystems=!host:reset

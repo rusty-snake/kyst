@@ -16,3 +16,6 @@ read-only ${HOME}/.local/share/nautilus/scripts
 read-only ${HOME}/.local/share/bash-completion
 
 blacklist ${RUNUSER}/at-spi2-*
+
+read-only ${HOME}/.config/GNOME-xdg-terminals.list
+read-only ${HOME}/.config/xdg-terminals.list

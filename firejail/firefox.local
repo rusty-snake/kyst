@@ -9,7 +9,7 @@ mkdir ${RUNUSER}/keepassxc
 whitelist ${RUNUSER}/keepassxc
 private-bin keepassxc-proxy,keepassxc-proxy-wrapper
 
-whitelist ${HOME}/GIT
+whitelist ${HOME}/_Devel
 noblacklist ${HOME}/.rustup
 whitelist ${HOME}/.rustup/toolchains/*/share/doc
 

@@ -37,7 +37,7 @@ noroot
 notv
 nou2f
 novideo
-seccomp
+seccomp !set_mempolicy
 seccomp.block-secondary
 tracelog
 

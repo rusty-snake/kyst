@@ -15,7 +15,7 @@ netfilter
 protocol unix,inet,inet6
 
 private
-private-bin env,python3*,youtube-dl
+private-bin env,python3*,yt-dlp
 private-etc youtube-dl.conf
 
 include private-etc:net.inc

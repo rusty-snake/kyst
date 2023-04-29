@@ -1,5 +1,6 @@
 [Context]
 sockets=wayland;
+persistent=.openshot_qt;
 
 [Session Bus Policy]
 com.canonical.AppMenu.Registrar=none

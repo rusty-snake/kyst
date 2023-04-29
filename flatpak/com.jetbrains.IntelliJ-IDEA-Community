@@ -2,11 +2,12 @@
 shared=ipc
 sockets=!ssh-auth;x11
 devices=!all;dri
-filesystems=~/.bashrc:ro;~/.gitconfig:ro;~/.cargo:ro;~/.rustup:ro;~/_Devel
+features=!devel
+filesystems=~/_Devel;~/.rustup:ro;~/.cargo:ro;~/.gitconfig:ro;~/.bashrc:ro
 persistent=.java
 
 [Session Bus Policy]
-org.freedesktop.Flatpak=none
 com.canonical.AppMenu.Registrar=none
+org.freedesktop.Flatpak=none
 org.gnome.keyring.SystemPrompter=none
 org.freedesktop.secrets=none

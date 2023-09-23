@@ -1,0 +1,9 @@
+ignore no3d
+
+# netlink just because it spams errors
+protocol unix,netlink
+ignore protocol
+
+net none
+
+private-etc machine-id

@@ -1,8 +1,0 @@
-[Session Bus Policy]
-org.gnome.Shell=none
-org.gnome.Software=none
-com.hack_computer.HackableAppsManager=none
-com.hack_computer.Clubhouse=none
-com.hack_computer.hack=none
-com.hack_computer.HackSoundServer=none
-com.hack_computer.GameStateService=none

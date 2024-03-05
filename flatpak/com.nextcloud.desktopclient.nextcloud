@@ -1,10 +1,11 @@
 [Context]
-shared=network;
-filesystems=xdg-run/Nextcloud:create;
+shared=network
+filesystems=!xdg-run/Nextcloud
 
 [Session Bus Policy]
+org.kde.kwalletd5=none
+org.kde.StatusNotifierWatcher=none
+org.kde.KGlobalSettings=none
 com.canonical.AppMenu.Registrar=none
 org.kde.kconfig.notify=none
-org.kde.KGlobalSettings=none
-org.kde.StatusNotifierWatcher=none
 org.kde.*=none

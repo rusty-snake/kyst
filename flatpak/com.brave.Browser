@@ -1,17 +1,18 @@
 [Context]
-sockets=!pcsc;!cups;
-devices=dri;!all;
-filesystems=xdg-run/pipewire-0:ro;
-
-[Session Bus Policy]
-org.gnome.Mutter.IdleMonitor.*=none
-org.kde.kwalletd5=none
-org.gnome.SessionManager=none
-org.freedesktop.ScreenSaver=none
-org.freedesktop.secrets=none
-org.freedesktop.FileManager1=none
-ca.desrt.dconf=none
+shared=network
+sockets=!cups;!pcsc
+devices=!all;dri
+filesystems=xdg-download/Brave:create;xdg-run/pipewire-0:ro
 
 [System Bus Policy]
 org.freedesktop.Avahi=none
 org.freedesktop.UPower=none
+
+[Session Bus Policy]
+org.kde.kwalletd5=none
+org.freedesktop.secrets=none
+org.freedesktop.FileManager1=none
+org.freedesktop.ScreenSaver=none
+ca.desrt.dconf=none
+org.gnome.SessionManager=none
+org.gnome.Mutter.IdleMonitor.*=none

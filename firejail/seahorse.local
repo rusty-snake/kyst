@@ -1,4 +1,0 @@
-#ignore dbus-system none
-
-private-etc gcrypt,passwd,pkcs11,xdg
-#private-bin ssh-keygen,gpgsm,gpg,gpgconf,seahorse

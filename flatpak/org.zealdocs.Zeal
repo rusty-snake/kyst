@@ -1,7 +1,0 @@
-[Context]
-shared=network
-
-[Session Bus Policy]
-com.canonical.AppMenu.Registrar=none
-org.kde.kconfig.notify=none
-org.kde.StatusNotifierWatcher=none

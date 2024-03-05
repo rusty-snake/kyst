@@ -1,0 +1,5 @@
+[Context]
+sockets=!ssh-auth
+
+[Session Bus Policy]
+org.freedesktop.Flatpak=none

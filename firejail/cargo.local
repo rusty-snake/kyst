@@ -1,2 +1,0 @@
-whitelist ${HOME}/.cargo
-whitelist ${HOME}/.rustup

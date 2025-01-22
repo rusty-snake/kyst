@@ -1,4 +1,0 @@
-ignore mkdir ${HOME}/.pki
-ignore mkdir ${HOME}/.local/share/pki
-
-include disable-xdg.inc
